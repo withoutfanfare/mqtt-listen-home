@@ -7,11 +7,12 @@ logging.basicConfig(filename='debug.log', level=logging.DEBUG)
 
 MQTT_BROKER = config["mqtt_broker"]
 MQTT_TOPIC = config["mqtt_topic"]
+MQTT_PORT = config["mqtt_port"]
 
 client = mqtt.Client()
 
 def on_connect(client, userdata, flags, rc):
-    print('Connected')
+    print('Connected.')
     client.subscribe(MQTT_TOPIC)
 
 def on_message(client, userdata, msg):
@@ -21,5 +22,5 @@ def on_message(client, userdata, msg):
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect(MQTT_BROKER, 1883)
+client.connect(MQTT_BROKER, MQTT_PORT)
 client.loop_forever()

@@ -1,4 +1,4 @@
-# MQTT Listen Home
+# MQTT Listen
 
-Private MQTT subscriber that subscribes to our home mqtt topics.
+Python MQTT subscriber that subscribes to mqtt topics.
 
