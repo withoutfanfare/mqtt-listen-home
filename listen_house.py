@@ -15,6 +15,7 @@ client = mqtt.Client()
 def on_connect(client, userdata, flags, rc):
     print('Connected.')
     logging.debug(logging.DEBUG)
+    logging.debug(client)
     logging.debug(userdata)
     logging.debug(flags)
     logging.debug(rc)
