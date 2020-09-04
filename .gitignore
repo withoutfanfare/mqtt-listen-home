@@ -1,0 +1,12 @@
+/private
+/tmp
+/.cghooks.lock
+/_ide_helper.php
+/.vscode
+*.bat
+
+/listen_house_config.py
+listen_house_config.py
+
+/__pycache__
+__pycache__
