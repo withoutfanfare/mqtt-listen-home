@@ -10,3 +10,6 @@ listen_house_config.py
 
 /__pycache__
 __pycache__
+
+*.log
+*.test
